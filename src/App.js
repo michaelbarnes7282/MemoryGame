@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./global";
 import { theme } from "./theme";
 import "./App.css";
-import { Burger } from "./components";
+import { Burger, Menu } from "./components";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -13,6 +13,7 @@ function App() {
       <GlobalStyles />
       <div>
         <Burger open={open} setOpen={setOpen} />
+        <Menu open={open} setOpen={setOpen} />
       </div>
       <div
         className="App"
